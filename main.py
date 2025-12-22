@@ -12,7 +12,7 @@ def splitTeams(names, numberOfTeams):
 
     teamIndex = 0
 
-    #loops through each name in fanodm name list and adds it to a team
+    #loops through each name in name list and adds it to a team
     for i in range(len(names)):
         teams[teamIndex].append(names[i])
         teamIndex += 1
@@ -47,7 +47,7 @@ else:
 
     teamNumber = 1  # Start team number count at 1
 
-    #Nested For Loop that iterates over teams list and names list and prints them
+
     for team in teams:
         for name in team:
             print(f"{name:<20}{'Team ' + str(teamNumber):<10}")
